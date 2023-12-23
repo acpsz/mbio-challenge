@@ -49,7 +49,7 @@ export class VehiclesList {
         await this.filterButton().click();
         await expect(this.closeButton()).toHaveCSS('display', 'block', {timeout: 40000});
         await this.filtersTabs(tabName).click();
-        await expect(this.common.loading()).toHaveCSS('opacity', '0', {timeout: 40000});
+        await this.common.waitForLoading();
     }
 
     async filterByColor(colourName: string) {
@@ -62,12 +62,12 @@ export class VehiclesList {
         }
         await this.colourDropdown('Colour 0').click();
         await this.colourName(colourName).click();
-        await expect(this.common.loading()).toHaveCSS('opacity', '0', {timeout: 40000});
+        await this.common.waitForLoading();
     }
 
     async sortByAndSelectProduct(sortoption: string) {
         await this.sortBy(sortoption);
-        await expect(this.common.loading()).toHaveCSS('opacity', '0', {timeout: 40000});
+        await this.common.waitForLoading();
         //const model = await page.locator('.dcp-cars-product-tile__model').first().textContent();
         await this.product().first().click();
     }

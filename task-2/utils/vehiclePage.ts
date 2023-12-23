@@ -24,7 +24,7 @@ export class VehiclePage {
     async enquireNow() {
         await expect(this.vehiclePage()).toBeAttached( {timeout: 50000} );
         await this.enquireNowButton().click();
-        await expect(this.common.loading()).toHaveCSS('opacity', '0', {timeout: 40000});
+        await this.common.waitForLoading();
     }
 
 }

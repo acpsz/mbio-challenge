@@ -11,4 +11,8 @@ export class Common {
         return this.page.locator('.dcp-loader--hide');
     }
 
+    async waitForLoading() {
+        await expect(this.loading()).toHaveCSS('opacity', '0', {timeout: 40000});
+    }
+
 }
