@@ -26,7 +26,7 @@ Clone the repository:
 https://github.com/acpsz/mbio-challenge.git
 ```
 
-Go to the task-2 folder and install the dependencies:
+Go to the TASK_2 folder and install the dependencies:
 ```bash
 npm install
 ```
