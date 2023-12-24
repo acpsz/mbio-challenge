@@ -16,6 +16,8 @@ This folder has a .pdf file with the answers. You can read/download them directl
 This folder has the implementation of the scenario "Validate the negative path of enquiring the highest price at Mercedes-Benz". This implementation was done using Playwright tool and Typescript language.
 The test is configured to run on Chrome (chromium) and Safari (webkit).
 
+A .csv file will be created on the TASK_2 folder, exporting the vehicle's VIN and Model.
+
 ### Requirements
 * npm
 * node ^20.10.0
@@ -31,11 +33,6 @@ Go to the TASK_2 folder and install the dependencies:
 npm install
 ```
 
-Install the Playwright
-```bash
-npx playwright install
-```
-
 ### Running the test
 Command to run the test on all browsers:
 ```bash
@@ -45,5 +42,8 @@ npx playwright test
 Command to run the test on a specific browser (chromium or webkit):
 ```bash
 npx playwright test --project chromium
+```
+```bash
+npx playwright test --project webkit
 ```
 

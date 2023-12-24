@@ -13,7 +13,7 @@ let vehiclePage: VehiclePage;
 let contactForm: ContactForm;
 let common: Common;
 
-test('task 2', async ({ page }) => {
+test('Enquiring highest car', async ({ page }) => {
   mainPage = new MainPage(page);
   locationModal = new LocationModal(page);
   vehiclesList = new VehiclesList(page);
