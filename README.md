@@ -31,6 +31,11 @@ Go to the TASK_2 folder and install the dependencies:
 npm install
 ```
 
+Install the Playwright
+```bash
+npx playwright install
+```
+
 ### Running the test
 Command to run the test on all browsers:
 ```bash
